@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
-const GuessControl = ({ onGuess }) => {
+function GuessControl({ onGuess }) {
   const [currentGuess, setCurrentGuess] = useState("");
 
   const handleInputChange = (event) => {
@@ -21,6 +21,6 @@ const GuessControl = ({ onGuess }) => {
       <Button onClick={onSubmitGuess}>Submit Guess</Button>
     </div>
   );
-};
+}
 
 export default GuessControl;
